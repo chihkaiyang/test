@@ -1,0 +1,168 @@
+.flex {
+  display: flex;
+}
+
+//header
+.header {
+  background-color: #424242;
+  padding: 100px 0px;
+  h1 {
+    width: 40%;
+    img {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+  form {
+    width: 30%;
+    color: #ffd366;
+  }
+  #height,
+  #weight {
+    width: 60%;
+    border: white 2px solid;
+    border-radius: 5px;
+    margin: 10px 0;
+    line-height: 1.5;
+  }
+}
+.renew-style {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  bottom: 0%;
+  right: 3%;
+  border: 5px solid #424242;
+  border-radius: 50%;
+  line-height: 30px;
+  img {
+    display: block;
+    margin: 5px auto;
+  }
+}
+.Show_wrap_style {
+  margin-top: -10px;
+}
+.calcbmi_style {
+  margin-top: 10px;
+}
+.warning {
+  padding: 50px 20px;
+  font-size: 36px;
+  font-weight: bold;
+}
+.ShowBMI {
+  display: none;
+}
+.Bmilevel {
+  width: 100%;
+}
+//contain
+.contain {
+  background-color: rgba(153, 153, 153, 0.164);
+}
+.record_style {
+  width: 80%;
+  padding: 50px 80px;
+}
+.del {
+  display: none;
+  position: absolute;
+  left: -10px;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #424242;
+  text-align: center;
+  color: #ffd366;
+  font-weight: bold;
+  padding: 24px;
+  font-size: 24px;
+}
+.record {
+  p {
+    padding: 1%;
+    span {
+      padding: 0 5px;
+    }
+  }
+  &List {
+    margin: 20px;
+    padding: 20px;
+    position: relative;
+    background-color: #fff;
+    &:hover {
+      .del {
+        display: block;
+      }
+    }
+  }
+}
+.bmiwrap,
+.btn {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid transparent;
+  font-weight: 600;
+  box-sizing: border-box;
+  padding: 2%;
+  position: relative;
+  p {
+    text-align: center;
+  }
+  .calcbmi {
+    line-height: 1.8;
+    font-size: 36px;
+  }
+}
+
+//footer
+.footer {
+  padding: 1%;
+  background: #ffd366;
+  text-align: center;
+}
+
+
+//給JS抓取的class
+.BDL_BLUE {
+  border-left: #31baf9 10px solid;
+}
+.BDL_GREEN {
+  border-left: #86d73e 10px solid;
+}
+.BDL_ORANGE {
+  border-left: #ff982d 10px solid;
+}
+.BDL_RED {
+  border-left: #ff1200 10px solid;
+}
+.bmiwapcolor_BLUE {
+  border-color: #31baf9;
+  color: #31baf9;
+}
+.bmiwapcolor_GREEN {
+  border-color: #86d73e;
+  color: #86d73e;
+}
+.bmiwapcolor_ORANGE {
+  border-color: #ff982d;
+  color: #ff982d;
+}
+.bmiwapcolor_RED {
+  border-color: #ff1200;
+  color: #ff1200;
+}
+.renew_BG_BLUE {
+  background-color: #31baf9;
+}
+.renew_BG_GREEN {
+  background-color: #86d73e;
+}
+.renew_BG_ORANGE {
+  background-color: #ff982d;
+}
+.renew_BG_RED {
+  background-color: #ff1200;
+}

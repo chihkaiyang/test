@@ -1,0 +1,96 @@
+@mixin logoBg($name, $bgFormat, $logoWidth, $logoHeight) {
+  background: url('../img/#{$name}.#{$bgFormat}');
+  width: $logoWidth;
+  height: $logoHeight;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/*bg-image隱藏文字*/
+@mixin hide-text {
+  white-space: nowrap;
+  text-indent: 101%;
+  overflow: hidden;
+}
+
+@mixin border-radius($num) {
+  border-radius: $num + px;
+}
+
+.floatL {
+  float: left;
+}
+.floatR {
+  float: right;
+}
+a{
+  text-decoration: none;
+}
+/*清除浮動*/
+.clearfix:after{
+  content:'';
+  display:table;
+  clear:both;
+}
+/*li 清單*/
+@mixin grid($full_width, $cloum_number, $cloum_gutter) {
+  width: ($full_width - $cloum_gutter * ($cloum_number - 1)) / $cloum_number;
+  margin-right: $cloum_gutter;
+  box-sizing: border-box;
+  float: left;
+  background-color: #eeeeee;
+  &:nth-child(#{$cloum_number}n) {
+    margin-right: 0;
+  }
+}
+
+/* 圖形化 */
+@mixin circle($size, $bgcolor) {
+  height: $size;
+  width: $size;
+  border-radius: $size/2;
+  background-color: $bgcolor;
+}
+
+// @mixin triangle($size, $color) {
+//     width: 0px;
+//     height: 0px;
+//     border-style: solid;
+//     border-width: $size;
+//     border-color: $color;
+// }
+
+/*0.86666 正三角形, 1等腰三角形*/
+@mixin triangle($size, $color, $align, $type: 0.8666) {
+  height: 0;
+  width: 0;
+  @if $align == top {
+    border-bottom: ($size * $type) solid $color;
+    border-left: ($size/2) solid transparent;
+    border-right: ($size/2) solid transparent;
+  } @else if $align == bottom {
+    border-top: ($size * $type) solid $color;
+    border-left: ($size/2) solid transparent;
+    border-right: ($size/2) solid transparent;
+  } @else if $align == left {
+    border-right: ($size * $type) solid $color;
+    border-top: ($size/2) solid transparent;
+    border-bottom: ($size/2) solid transparent;
+  } @else if $align == right {
+    border-left: ($size * $type) solid $color;
+    border-top: ($size/2) solid transparent;
+    border-bottom: ($size/2) solid transparent;
+  } @else if $align == left-top {
+    border-left: $size solid $color;
+    border-bottom: $size solid transparent;
+  } @else if $align == left-bottom {
+    border-left: $size solid $color;
+    border-top: $size solid transparent;
+  } @else if $align == right-top {
+    border-right: $size solid $color;
+    border-bottom: $size solid transparent;
+  } @else if $align == right-bottom {
+    border-right: $size solid $color;
+    border-top: $size solid transparent;
+  }
+}

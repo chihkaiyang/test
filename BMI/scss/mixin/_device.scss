@@ -1,0 +1,13 @@
+$pad-device:768px;
+$phone-device:471px;
+
+@mixin pad{
+  @media (max-width: $pad-device){
+    @content;
+  }
+}
+@mixin phone{
+  @media(max-width: $phone-device){
+  @content;
+  }
+}

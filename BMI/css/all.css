@@ -1,0 +1,229 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/*bg-image隱藏文字*/
+.floatL {
+  float: left; }
+
+.floatR {
+  float: right; }
+
+a {
+  text-decoration: none; }
+
+/*清除浮動*/
+.clearfix:after {
+  content: '';
+  display: table;
+  clear: both; }
+
+/*li 清單*/
+/* 圖形化 */
+/*0.86666 正三角形, 1等腰三角形*/
+body {
+  font-family: "Microsoft JhengHei", "Noto Sans TC", Arial, Sans Serif; }
+
+.wrap {
+  width: 100%;
+  margin: 0 auto; }
+
+.container {
+  width: 960px;
+  margin: 0 auto; }
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.header {
+  background-color: #424242;
+  padding: 100px 0px; }
+  .header h1 {
+    width: 40%; }
+    .header h1 img {
+      display: block;
+      margin: 0 auto; }
+  .header form {
+    width: 30%;
+    color: #ffd366; }
+  .header #height,
+  .header #weight {
+    width: 60%;
+    border: white 2px solid;
+    border-radius: 5px;
+    margin: 10px 0;
+    line-height: 1.5; }
+
+.renew-style {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  bottom: 0%;
+  right: 3%;
+  border: 5px solid #424242;
+  border-radius: 50%;
+  line-height: 30px; }
+  .renew-style img {
+    display: block;
+    margin: 5px auto; }
+
+.Show_wrap_style {
+  margin-top: -10px; }
+
+.calcbmi_style {
+  margin-top: 10px; }
+
+.warning {
+  padding: 50px 20px;
+  font-size: 36px;
+  font-weight: bold; }
+
+.ShowBMI {
+  display: none; }
+
+.Bmilevel {
+  width: 100%; }
+
+.contain {
+  background-color: rgba(153, 153, 153, 0.164); }
+
+.record_style {
+  width: 80%;
+  padding: 50px 80px; }
+
+.del {
+  display: none;
+  position: absolute;
+  left: -10px;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: #424242;
+  text-align: center;
+  color: #ffd366;
+  font-weight: bold;
+  padding: 24px;
+  font-size: 24px; }
+
+.record p {
+  padding: 1%; }
+  .record p span {
+    padding: 0 5px; }
+
+.recordList {
+  margin: 20px;
+  padding: 20px;
+  position: relative;
+  background-color: #fff; }
+  .recordList:hover .del {
+    display: block; }
+
+.bmiwrap,
+.btn {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid transparent;
+  font-weight: 600;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 2%;
+  position: relative; }
+  .bmiwrap p,
+  .btn p {
+    text-align: center; }
+  .bmiwrap .calcbmi,
+  .btn .calcbmi {
+    line-height: 1.8;
+    font-size: 36px; }
+
+.footer {
+  padding: 1%;
+  background: #ffd366;
+  text-align: center; }
+
+.BDL_BLUE {
+  border-left: #31baf9 10px solid; }
+
+.BDL_GREEN {
+  border-left: #86d73e 10px solid; }
+
+.BDL_ORANGE {
+  border-left: #ff982d 10px solid; }
+
+.BDL_RED {
+  border-left: #ff1200 10px solid; }
+
+.bmiwapcolor_BLUE {
+  border-color: #31baf9;
+  color: #31baf9; }
+
+.bmiwapcolor_GREEN {
+  border-color: #86d73e;
+  color: #86d73e; }
+
+.bmiwapcolor_ORANGE {
+  border-color: #ff982d;
+  color: #ff982d; }
+
+.bmiwapcolor_RED {
+  border-color: #ff1200;
+  color: #ff1200; }
+
+.renew_BG_BLUE {
+  background-color: #31baf9; }
+
+.renew_BG_GREEN {
+  background-color: #86d73e; }
+
+.renew_BG_ORANGE {
+  background-color: #ff982d; }
+
+.renew_BG_RED {
+  background-color: #ff1200; }

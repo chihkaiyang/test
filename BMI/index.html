@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BMI</title>
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <section class="header ">
+            <div class="container flex">
+                <h1><img src="./img/BMICLogo.png" alt=""></h1>
+                <form>
+                    <label for="height">身高</label>
+                    <br>
+                    <input id="height" type="number" placeholder="請輸入身高">公分
+                    <br>
+                    <label for="weight">體重</label>
+                    <br>
+                    <input id="weight" type="number" placeholder="請輸入體重">公斤
+                </form>
+                <div class="Show_wrap Show_wrap_style flex">
+                    <input class="btn" type="button" value="計算">
+                    <div class="ShowBMI">
+                        <div class="WarnningWrap flex">
+                            <div class="bmiwrap bmiwapcolor_RED">
+                                <p class="calcbmi calcbmi_style"></p>
+                                <p>BMI</p>
+                                <div class="renew renew-style">
+                                    <a href="javascript:;">
+                                        <img src="./img/icons_loop.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="warning bmiwapcolor_RED">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contain">
+            <div class="container">
+                <ul class="record record_style">
+
+
+                </ul>
+            </div>
+        </section>
+        <section class="footer">
+            <div class="container">
+                <img src="./img/logo_small.png" alt="">
+            </div>
+
+        </section>
+    </div>
+
+    <script src="./js/all.js"></script>
+</body>
+
+</html>
